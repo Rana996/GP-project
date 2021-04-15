@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Qra extends StatefulWidget {
+class Shapes extends StatefulWidget {
   @override
-  _QraState createState() => _QraState();
+  _ShapesState createState() => _ShapesState();
 }
 
-class _QraState extends State<Qra> {
+class _ShapesState extends State<Shapes> {
   @override
   Widget build(BuildContext context) {
     return Container();

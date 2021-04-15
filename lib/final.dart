@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class Qra extends StatefulWidget {
+class Final extends StatefulWidget {
   @override
-  _QraState createState() => _QraState();
+  _FinalState createState() => _FinalState();
 }
 
-class _QraState extends State<Qra> {
+class _FinalState extends State<Final> {
   @override
   Widget build(BuildContext context) {
     return Container();
