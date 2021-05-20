@@ -65,6 +65,9 @@ flutter:
     - images/final.jpg
     - images/back.jpg
     - images/u.jpg
+    - images/fish.gif
+    - images/ve.gif
+    - images/b.png
 
 
   # assets:
