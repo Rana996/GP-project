@@ -28,6 +28,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
+  carousel_slider: ^1.3.1
+  audioplayers: ^0.13.5
 
 dev_dependencies:
   flutter_test:
@@ -50,6 +52,7 @@ flutter:
     - images/romdy.png
     - images/abc.png
     - images/animals.jpg
+    - images/u.jpg
     - images/colors.jpg
     - images/number.jpg
     - images/parts.jpg
@@ -68,6 +71,84 @@ flutter:
     - images/fish.gif
     - images/ve.gif
     - images/b.png
+    - images/alp/arrow2.png
+    - images/alp/background.png
+    - images/alp/h.png
+    - images/alp/lion.png
+    - images/alp/duck.png
+    - images/alp/croco.png
+    - images/alp/fox.png
+    - images/alp/giraffe.png
+    - images/alp/zebra.png
+    - images/alp/خروف.png
+    - images/alp/ديك.png
+    - images/alp/ذئب.png
+    - images/alp/رقون.png
+    - images/alp/زرافة.png
+    - images/alp/سنجاب.png
+    - images/alp/شبل.png
+    - images/alp/صقر.png
+    - images/alp/ضفدع.png
+    - images/alp/طاووس.png
+    - images/alp/ظبي.png
+    - images/alp/عصفور.png
+    - images/alp/غزال.png
+    - images/alp/فيل.png
+    - images/alp/قطة.png
+    - images/alp/كلب.png
+    - images/alp/ماعز.png
+    - images/alp/نمر.png
+    - images/alp/هدهد.png
+    - images/alp/وحيد.png
+    - images/alp/يمامة.png
+    - images/clo/boot.png
+    - images/clo/cap.png
+    - images/clo/dress.png
+    - images/clo/glaves.png
+    - images/clo/hat.png
+    - images/clo/jaket.png
+    - images/clo/jeans.png
+    - images/clo/shirt.png
+    - images/clo/skrit.png
+    - images/clo/clo.png
+    - images/clo/ba.jpg
+    - assets/خروف.mp3
+    - assets/ديك.mp3
+    - assets/ذئب.mp3
+    - assets/رقون.mp3
+    - assets/زرافة.mp3
+    - assets/سنجاب.mp3
+    - assets/شبل.mp3
+    - assets/صقر.mp3
+    - assets/ضفدع.mp3
+    - assets/طاووس.mp3
+    - assets/ظبي.mp3
+    - assets/عصفور.mp3
+    - assets/غزال.mp3
+    - assets/فيل.mp3
+    - assets/قطة.mp3
+    - assets/كلب.mp3
+    - assets/ماعز.mp3
+    - assets/نمر.mp3
+    - assets/هدهد.mp3
+    - assets/وحيد.mp3
+    - assets/يمامة.mp3
+    - assets/ggg.mp3
+    - assets/aa.mp3
+    - assets/bb.mp3
+    - assets/tt.mp3
+    - assets/ss.mp3
+    - assets/gg.mp3
+    - assets/hh.mp3
+    - assets/boot.mp3
+    - assets/cap.mp3
+    - assets/claves.mp3
+    - assets/dress.mp3
+    - assets/hat.mp3
+    - assets/jeaket.mp3
+    - assets/jeans.mp3
+    - assets/shirt.mp3
+    - assets/skrit.mp3
 
 
   # assets:

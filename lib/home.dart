@@ -9,6 +9,8 @@ import 'package:gp/rana/qra.dart';
 import 'package:gp/sara/months.dart';
 import 'package:gp/sara/shapes.dart';
 import 'package:gp/sara/v_and_f.dart';
+import 'package:gp/wessam/alp_slide.dart';
+import 'package:gp/wessam/clo_slide.dart';
 import 'package:gp/wessam/clothes.dart';
 import 'package:gp/wessam/colors.dart';
 import 'package:gp/wessam/english.dart';
@@ -106,8 +108,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       children: <Widget>[
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => Alp()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => AlpSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -735,7 +739,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Clothes()));
+                                    builder: (context) => CloSlide()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
