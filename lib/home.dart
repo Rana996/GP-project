@@ -9,15 +9,19 @@ import 'package:gp/rana/qra.dart';
 import 'package:gp/sara/months.dart';
 import 'package:gp/sara/shapes.dart';
 import 'package:gp/sara/v_and_f.dart';
+import 'package:gp/wessam/alp.dart';
 import 'package:gp/wessam/alp_slide.dart';
 import 'package:gp/wessam/clo_slide.dart';
-import 'package:gp/wessam/clothes.dart';
-import 'package:gp/wessam/colors.dart';
+import 'package:gp/wessam/co_slide.dart';
+import 'package:gp/wessam/co_vedio.dart';
+import 'package:gp/wessam/eng_slide.dart';
+//import 'package:gp/wessam/clothes.dart';
+//import 'package:gp/wessam/colors.dart';
 import 'package:gp/wessam/english.dart';
 import 'package:gp/yasmin/animals.dart';
 import 'package:gp/yasmin/numbers.dart';
 import 'package:gp/yasmin/seasons.dart';
-import 'wessam/alp.dart';
+//import 'wessam/alp.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -66,9 +70,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                               ),
                             ]),
                         child: Icon(
-                          Icons.home,
+                          Icons.lock_open,
                           size: 30.0,
-                          color: Colors.blue,
+                          color: Colors.teal[300],
                         ),
                       ),
                       Container(
@@ -93,7 +97,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         child: Icon(
                           Icons.account_box_rounded,
                           size: 35.0,
-                          color: Colors.blue,
+                          color: Colors.tealAccent[700],
                         ),
                       ),
                     ],
@@ -111,7 +115,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => AlpSlider()));
+                                    builder: (context) => CoVideo(
+                                        videopath: 'assets/covideo.mp4',
+                                        headerText: "Colors")));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -172,7 +178,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => English()));
+                                    builder: (context) => EngSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -298,7 +304,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Coloors()));
+                                    builder: (context) => CoSlide()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),

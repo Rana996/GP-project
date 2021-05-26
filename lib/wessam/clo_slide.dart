@@ -35,11 +35,11 @@ class _CloSlideState extends State<CloSlide> {
     return Scaffold(
       body: Container(
         decoration: BoxDecoration(
-          image: DecorationImage(
+            /* image: DecorationImage(
             image: AssetImage('images/clo/ba.jpg'),
             fit: BoxFit.cover,
-          ),
-        ),
+          ),*/
+            ),
         child: CustomScrollView(
           slivers: <Widget>[
             SliverAppBar(
