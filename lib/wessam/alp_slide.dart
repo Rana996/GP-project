@@ -66,7 +66,7 @@ class _AlpSliderState extends State<AlpSlider> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Image.asset('images/alp/arrow2.png'),
+          icon: Image.asset('images/arrow.png'),
         ),
         backgroundColor: Colors.lightBlueAccent,
         elevation: 0.0,
@@ -323,7 +323,7 @@ class _AlpSliderState extends State<AlpSlider> {
                       height: double.infinity,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10.0),
-                          color: Colors.lightBlueAccent,
+                          color: Colors.white,
                           boxShadow: [
                             BoxShadow(
                                 color: Colors.black26,
@@ -335,16 +335,32 @@ class _AlpSliderState extends State<AlpSlider> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: <Widget>[
                           Container(
-                            height: 200.0,
-                            width: 200.0,
-                            child: Image.asset('images/alp.png'),
-                          ),
-                          Text(
-                            " الحروف العربية",
-                            style: TextStyle(
-                                fontSize: 25.0,
-                                fontFamily: 'Comic',
-                                fontWeight: FontWeight.bold),
+                            height: 300.0,
+                            width: 300.0,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(100.0),
+                            ),
+                            child: Stack(
+                              children: <Widget>[
+                                Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.center,
+                                      children: <Widget>[
+                                        Container(
+                                          width: 250.0,
+                                          height: 300.0,
+                                          child:
+                                              Image.asset('images/alpa.jpeg'),
+                                        ),
+                                      ],
+                                    ),
+                                  ],
+                                ),
+                              ],
+                            ),
                           ),
                         ],
                       ),

@@ -149,6 +149,9 @@ flutter:
     - images/eng/yacht.png
     - images/videoback.jpg
     - images/arrow.png
+    - images/english.jpeg
+    - images/alpa.jpeg
+    - images/coq.jpg
     - assets/خروف.mp3
     - assets/ديك.mp3
     - assets/ذئب.mp3
@@ -219,6 +222,7 @@ flutter:
     - assets/x.mp3
     - assets/y.mp3
     - assets/z.mp3
+    - assets/true.mp3
     - assets/covideo.mp4
 
 

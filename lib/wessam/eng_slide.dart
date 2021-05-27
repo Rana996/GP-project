@@ -13,6 +13,7 @@ AudioPlayer audioPlayer = AudioPlayer(mode: PlayerMode.LOW_LATENCY);
 
 class _EngSliderState extends State<EngSlider> {
   List<String> alphabetical = [
+    'English',
     'a',
     'b',
     'c',
@@ -79,7 +80,7 @@ class _EngSliderState extends State<EngSlider> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Image.asset('images/alp/arrow2.png'),
+          icon: Image.asset('images/arrow.png'),
         ),
         elevation: 0.0,
         backgroundColor: Colors.teal[300],
@@ -107,6 +108,7 @@ class _EngSliderState extends State<EngSlider> {
                 enlargeCenterPage: true,
                 scrollDirection: Axis.horizontal,
                 onPageChanged: (index) {
+                  if (alphabetical[index] == 'English') {}
                   if (alphabetical[index] == 'a') {
                     if (audioCache.play('a.mp3') == audioCache.play('a.mp3')) {
                       audioCache.play('a.mp3');
@@ -291,6 +293,58 @@ class _EngSliderState extends State<EngSlider> {
                   }
                 },
                 items: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(10.0),
+                    child: Container(
+                      width: double.infinity,
+                      height: double.infinity,
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(10.0),
+                          color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                                color: Colors.black26,
+                                offset: Offset(2, 1),
+                                blurRadius: 09.0)
+                          ]),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: <Widget>[
+                          GestureDetector(
+                            child: Container(
+                              height: 300.0,
+                              width: 300.0,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(100.0),
+                              ),
+                              child: Stack(
+                                children: <Widget>[
+                                  Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: <Widget>[
+                                          Container(
+                                            width: 250.0,
+                                            height: 300.0,
+                                            child: Image.asset(
+                                                'images/english.jpeg'),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                   Padding(
                     padding: EdgeInsets.all(10.0),
                     child: Container(

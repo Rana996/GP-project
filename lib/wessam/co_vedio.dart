@@ -57,10 +57,18 @@ class _CoVideoState extends State<CoVideo> {
               ),
             ),
             Positioned(
-              top: 225,
-              left: 25,
-              right: 30,
-              bottom: 35,
+              top: MediaQuery.of(context).orientation == Orientation.portrait
+                  ? 225
+                  : 110,
+              left: MediaQuery.of(context).orientation == Orientation.portrait
+                  ? 25
+                  : 40,
+              right: MediaQuery.of(context).orientation == Orientation.portrait
+                  ? 30
+                  : 50,
+              bottom: MediaQuery.of(context).orientation == Orientation.portrait
+                  ? 35
+                  : 20,
               child: VideoPlayerWidget(controller: controller),
             )
           ],

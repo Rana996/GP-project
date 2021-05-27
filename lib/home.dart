@@ -12,6 +12,7 @@ import 'package:gp/sara/v_and_f.dart';
 import 'package:gp/wessam/alp.dart';
 import 'package:gp/wessam/alp_slide.dart';
 import 'package:gp/wessam/clo_slide.dart';
+import 'package:gp/wessam/coQuize.dart';
 import 'package:gp/wessam/co_slide.dart';
 import 'package:gp/wessam/co_vedio.dart';
 import 'package:gp/wessam/eng_slide.dart';
@@ -178,7 +179,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => EngSlider()));
+                                    builder: (context) => CoQuize()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
