@@ -320,6 +320,33 @@ flutter:
     - images/seasons/winter.jpg
     - images/seasons/spring.png
     - images/seasons/fall.jpg
+    - images/month/jan.jpg
+    - images/month/feb.jpg
+    - images/month/mar.jpg
+    - images/month/april.jpg
+    - images/month/may.jpg
+    - images/month/jun.jpg
+    - images/month/jul.jpg
+    - images/month/aug.jpg
+    - images/month/sep.jpg
+    - images/month/oct.jpg
+    - images/month/nov.jpg
+    - images/month/dec.jpg
+    - images/shape/rec.jpg
+    - images/shape/star.jpg
+    - images/shape/square.jpg
+    - images/shape/triangle.jpg
+    - images/veg/pear.jpg
+    - images/veg/peach.jpg
+    - images/veg/orange.jpg
+    - images/veg/onion.jpg
+    - images/veg/grapes.jpg
+    - images/veg/cuc.jpg
+    - images/veg/carr.jpg
+    - images/veg/cabb.jpg
+    - images/veg/broc.jpg
+    - images/veg/apple.jpg
+    - images/veg/bana.jpg
     - assets/ggg.mp3
     - assets/Hen.mp3
     - assets/Cock.mp3
@@ -341,6 +368,27 @@ flutter:
     - assets/fala.mp3
     - assets/fata.mp3
     - assets/ekl.mp3
+    - assets/jul.mp3
+    - assets/jun.mp3
+    - assets/mar.mp3
+    - assets/may.mp3
+    - assets/nov.mp3
+    - assets/oct.mp3
+    - assets/sep.mp3
+    - assets/jan.mp3
+    - assets/feb.mp3
+    - assets/aug.mp3
+    - assets/dec.mp3
+    - assets/april.mp3
+    - assets/star.mp3
+    - assets/square.mp3
+    - assets/rec.mp3
+    - assets/circle.mp3
+    - assets/apple.mp3
+    - assets/pear.mp3
+    - assets/onion.mp3
+
+
 
 
 

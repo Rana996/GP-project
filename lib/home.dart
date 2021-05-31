@@ -812,7 +812,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Months()));
+                                    builder: (context) => MonthSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -875,7 +875,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Vegtables()));
+                                    builder: (context) => VegSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -938,7 +938,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Shapes()));
+                                    builder: (context) => ShapeSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
