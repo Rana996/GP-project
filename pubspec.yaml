@@ -306,6 +306,20 @@ flutter:
     - images/animals/rabbit.png
     - images/animals/sheep.png
     - images/animals/tiger.png
+    - images/numbers/one.png
+    - images/numbers/two.png
+    - images/numbers/three.png
+    - images/numbers/four.png
+    - images/numbers/five.png
+    - images/numbers/six.png
+    - images/numbers/seven.png
+    - images/numbers/eight.png
+    - images/numbers/nine.png
+    - images/numbers/ten.png
+    - images/seasons/summer.jpg
+    - images/seasons/winter.jpg
+    - images/seasons/spring.png
+    - images/seasons/fall.jpg
     - assets/ggg.mp3
     - assets/Hen.mp3
     - assets/Cock.mp3

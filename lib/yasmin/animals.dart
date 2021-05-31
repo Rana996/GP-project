@@ -117,7 +117,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -160,7 +162,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -202,7 +206,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -244,7 +250,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -286,7 +294,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -328,7 +338,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -370,7 +382,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -412,7 +426,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         fillColor: Colors.white,
                         child: Icon(
@@ -454,7 +470,9 @@ class _AnimalSliderState extends State<AnimalSlider> {
                       ),
                       SizedBox(height: 50),
                       RawMaterialButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          audioCache.play("Sunday.mp3");
+                        },
                         elevation: 2.0,
                         //fillColor: Colors.white,
                         child: Icon(
