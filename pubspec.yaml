@@ -31,6 +31,7 @@ dependencies:
   carousel_slider: ^1.3.1
   audioplayers: ^0.13.5
   video_player: ^1.0.1
+  
 
 dev_dependencies:
   flutter_test:
@@ -224,6 +225,119 @@ flutter:
     - assets/z.mp3
     - assets/true.mp3
     - assets/covideo.mp4
+    - images/Body Parts/Face1.png
+    - images/Body Parts/Face2.png
+    - images/Body Parts/Face3.png
+    - images/Body Parts/Face4.png
+    - images/Body Parts/Face5.png
+    - images/Body Parts/Eye1.png
+    - images/Body Parts/Eye2.png
+    - images/Body Parts/Eye3.png
+    - images/Body Parts/Eyebrows1.png
+    - images/Body Parts/eyebrow.png
+    - images/Body Parts/Hair.png
+    - images/Body Parts/Nose1.png
+    - images/Body Parts/Nose2.png
+    - images/Body Parts/Mouth.png
+    - images/Body Parts/Lips.png
+    - images/Body Parts/Teeth.png
+    - images/Body Parts/Tongue.png
+    - images/Body Parts/Ear1.png
+    - images/Body Parts/Ear2.png
+    - images/Body Parts/Ear3.png
+    - images/Body Parts/Hand.png
+    - images/Body Parts/Hands.png
+    - images/Body Parts/Arm.png
+    - images/Body Parts/Foot.png
+    - images/Body Parts/Foot1.jpg
+    - images/Body Parts/Feet.png
+    - images/Body Parts/Feet2.png
+    - images/Body Parts/Leg1.webp
+    - images/Body Parts/Leg2.png
+    - assets/Sparrow.mp3
+    - images/Vehicles/bicycle.png
+    - images/Vehicles/bicycle2.png
+    - images/Vehicles/scooter.png
+    - images/Vehicles/car.png
+    - images/Vehicles/policecar.png
+    - images/Vehicles/van.png
+    - images/Vehicles/bus2.png
+    - images/Vehicles/schoolbus2.png
+    - images/Vehicles/firetruck.png
+    - images/Vehicles/ambulance.png
+    - images/Vehicles/ambulance2.png
+    - images/Vehicles/train.png
+    - images/Vehicles/boat.png
+    - images/Vehicles/ship.png
+    - images/Vehicles/airplane.png
+    - images/Vehicles/rocket.png
+    - images/Vehicles/bus.png
+    - images/Birds/bat.png
+    - images/Birds/cock.png
+    - images/Birds/ducks.png
+    - images/Birds/flamingo.png
+    - images/Birds/hen.png
+    - images/Birds/owl.png
+    - images/Birds/Swan.png
+    - images/Birds/parrot.png
+    - images/Birds/peacock.png
+    - images/Birds/pinguin.png
+    - images/Birds/sparrow.png
+    - images/Week-days/saturday.png
+    - images/Week-days/sunday.png
+    - images/Week-days/monday.png
+    - images/Week-days/tuesday.png
+    - images/Week-days/wednesday.png
+    - images/Week-days/thursday.png
+    - images/Week-days/friday.png
+    - images/qurran/alfatha.jpg
+    - images/qurran/alekhlas.jpg
+    - images/qurran/alfalaq.jpg
+    - images/qurran/alnas.jpg
+    - images/kuraan/alfathah.jpg
+    - images/kuraan/alfathah1.jpg
+    - images/animals/cat.png
+    - images/animals/cow.png
+    - images/animals/dog.png
+    - images/animals/elephant.png
+    - images/animals/horse.png
+    - images/animals/lion.png
+    - images/animals/monkey.png
+    - images/animals/rabbit.png
+    - images/animals/sheep.png
+    - images/animals/tiger.png
+    - assets/ggg.mp3
+    - assets/Hen.mp3
+    - assets/Cock.mp3
+    - assets/Duck.mp3
+    - assets/Swan.mp3
+    - assets/Penguin.mp3
+    - assets/Owl.mp3
+    - assets/Parrot.mp3
+    - assets/Peacock.mp3
+    - assets/Flamingo.mp3
+    - assets/Saturday.mp3
+    - assets/Monday.mp3
+    - assets/Tuesday.mp3
+    - assets/Wednesday.mp3
+    - assets/Thursday.mp3
+    - assets/Friday.mp3
+    - assets/Sunday.mp3
+    - assets/nas.mp3
+    - assets/fala.mp3
+    - assets/fata.mp3
+    - assets/ekl.mp3
+
+
+
+
+
+
+
+
+
+
+
 
 
   # assets:

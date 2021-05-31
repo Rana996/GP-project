@@ -11,10 +11,12 @@ import 'package:gp/sara/shapes.dart';
 import 'package:gp/sara/v_and_f.dart';
 import 'package:gp/wessam/alp.dart';
 import 'package:gp/wessam/alp_slide.dart';
+import 'package:gp/wessam/cloQuize.dart';
 import 'package:gp/wessam/clo_slide.dart';
 import 'package:gp/wessam/coQuize.dart';
 import 'package:gp/wessam/co_slide.dart';
 import 'package:gp/wessam/co_vedio.dart';
+import 'package:gp/wessam/engQuize.dart';
 import 'package:gp/wessam/eng_slide.dart';
 //import 'package:gp/wessam/clothes.dart';
 //import 'package:gp/wessam/colors.dart';
@@ -22,6 +24,7 @@ import 'package:gp/wessam/english.dart';
 import 'package:gp/yasmin/animals.dart';
 import 'package:gp/yasmin/numbers.dart';
 import 'package:gp/yasmin/seasons.dart';
+
 //import 'wessam/alp.dart';
 
 class Home extends StatefulWidget {
@@ -179,7 +182,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CoQuize()));
+                                    builder: (context) => CloQuize()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -368,7 +371,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Animals()));
+                                    builder: (context) => AnimalSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -431,7 +434,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Days()));
+                                    builder: (context) => DaySlide()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -494,7 +497,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Organs()));
+                                    builder: (context) => BodyP()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -620,7 +623,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Vechiles()));
+                                    builder: (context) => TransportSlide()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -683,7 +686,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => Birds()));
+                                    builder: (context) => BirdSlide()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -995,8 +998,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         ),
                         GestureDetector(
                           onTap: () {
-                            Navigator.push(context,
-                                MaterialPageRoute(builder: (context) => Qra()));
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => QuranSlider()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
