@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/gihad/organs.dart';
+import 'package:gp/gihad/organs_quiz.dart';
 
 class ListOrgans extends StatelessWidget {
   static String id = "ListScreen";
@@ -91,7 +92,10 @@ class ListOrgans extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => BodyQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

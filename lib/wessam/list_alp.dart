@@ -99,7 +99,10 @@ class ListAlp extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                     Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AlpSlider()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

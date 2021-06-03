@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/co_vedio.dart';
 import 'package:gp/rana/qra.dart';
+import 'package:gp/rana/qra_quiz.dart';
 
 class ListQra extends StatelessWidget {
   static String id = "ListScreen";
@@ -99,7 +100,10 @@ class ListQra extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => QuranQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

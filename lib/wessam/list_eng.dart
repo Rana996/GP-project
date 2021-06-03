@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/co_vedio.dart';
 import 'package:gp/wessam/eng_slide.dart';
+import 'package:gp/wessam/engQuize.dart';
 
 class ListEng extends StatelessWidget {
   static String id = "ListScreen";
@@ -99,7 +100,10 @@ class ListEng extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => EngQuize()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

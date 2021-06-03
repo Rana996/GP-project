@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/gihad/vechiles.dart';
+import 'package:gp/gihad/vechiles_quiz.dart';
 
 class ListVechiles extends StatelessWidget {
   static String id = "ListScreen";
@@ -93,7 +94,12 @@ class ListVechiles extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => VehiclesQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

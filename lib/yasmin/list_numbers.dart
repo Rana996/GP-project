@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/yasmin/number_quiz.dart';
 import 'package:gp/yasmin/numbers.dart';
 
 class ListNumbers extends StatelessWidget {
@@ -93,7 +94,10 @@ class ListNumbers extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => NumMatch()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

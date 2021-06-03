@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/wessam/cloQuize.dart';
 import 'package:gp/wessam/clo_slide.dart';
 import 'package:gp/co_vedio.dart';
 
@@ -99,7 +100,10 @@ class ListClo extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => CloQuize()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

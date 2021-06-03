@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/co_vedio.dart';
+import 'package:gp/wessam/coQuize.dart';
+import 'package:gp/yasmin/animal_quiz.dart';
 import 'package:gp/yasmin/animals.dart';
 
 class ListAnimals extends StatelessWidget {
@@ -101,7 +103,10 @@ class ListAnimals extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AnimalsQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

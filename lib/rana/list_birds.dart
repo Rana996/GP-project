@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/co_vedio.dart';
+import 'package:gp/rana/bird_quiz.dart';
 import 'package:gp/rana/birds.dart';
 
 class Listbirds extends StatelessWidget {
@@ -99,7 +100,10 @@ class Listbirds extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => BirdQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

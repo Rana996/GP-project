@@ -347,6 +347,22 @@ flutter:
     - images/veg/broc.jpg
     - images/veg/apple.jpg
     - images/veg/bana.jpg
+    - images/qurran/AwlSura.jpg
+    - images/qurran/AlfathaQuiz.jpg
+    - images/qurran/AlekhlasQuiz.jpg
+    - images/qurran/AlfalaqQuiz.jpg
+    - images/qurran/AlnasQuiz.jpg
+    - images/BackgroundQuiz/Back1.jpg
+    - images/Week-days/OrderDays1.jpg
+    - images/Week-days/OrderDays2.jpg
+    - images/Week-days/CompleteDays.jpg
+    - images/Week-days/RandomDays.png
+    - images/Week-days/DaysStairs.png
+    - images/seasons/qfall.png
+    - images/seasons//qwinter.png
+    - images/seasons//qspring.jpg
+    - images/seasons//qsummer.png
+    - images/seasons//Seasons.jpg
     - images/si.png
     - images/yi.png
     - images/ti.png

@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/co_vedio.dart';
 import 'package:gp/rana/day.dart';
+import 'package:gp/rana/day_quiz.dart';
 
 class ListDay extends StatelessWidget {
   static String id = "ListScreen";
@@ -99,7 +100,10 @@ class ListDay extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => DaysQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

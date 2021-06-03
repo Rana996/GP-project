@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/yasmin/numbers.dart';
+import 'package:gp/yasmin/season_quiz.dart';
 import 'package:gp/yasmin/seasons.dart';
 
 class ListSeasons extends StatelessWidget {
@@ -94,7 +95,10 @@ class ListSeasons extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => SeasonsQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

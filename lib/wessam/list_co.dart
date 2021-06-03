@@ -67,8 +67,12 @@ class ListCo extends StatelessWidget {
                 //color: Colors.white,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => CoVideo()));
+                     Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/covideo.mp4',
+                                headerText: "Colors")));
                   },
                   child: Image(
                     image: AssetImage("images/yi.png"),
@@ -98,12 +102,8 @@ class ListCo extends StatelessWidget {
                 // color: Colors.white,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => CoVideo(
-                                videopath: 'assets/covideo.mp4',
-                                headerText: "Colors")));
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => CoQuize()));
                   },
                   child: Image(
                     image: AssetImage("images/ti.png"),
