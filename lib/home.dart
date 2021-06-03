@@ -1,31 +1,21 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gp/final.dart';
-import 'package:gp/gihad/organs.dart';
-import 'package:gp/gihad/vechiles.dart';
-import 'package:gp/rana/birds.dart';
-import 'package:gp/rana/day.dart';
-import 'package:gp/rana/qra.dart';
-import 'package:gp/sara/months.dart';
-import 'package:gp/sara/shapes.dart';
-import 'package:gp/sara/v_and_f.dart';
-import 'package:gp/wessam/alp.dart';
-import 'package:gp/wessam/alp_slide.dart';
-import 'package:gp/wessam/cloQuize.dart';
-import 'package:gp/wessam/clo_slide.dart';
-import 'package:gp/wessam/coQuize.dart';
-import 'package:gp/wessam/co_slide.dart';
-import 'package:gp/wessam/co_vedio.dart';
-import 'package:gp/wessam/engQuize.dart';
-import 'package:gp/wessam/eng_slide.dart';
-//import 'package:gp/wessam/clothes.dart';
-//import 'package:gp/wessam/colors.dart';
-import 'package:gp/wessam/english.dart';
-import 'package:gp/yasmin/animals.dart';
-import 'package:gp/yasmin/numbers.dart';
-import 'package:gp/yasmin/seasons.dart';
-
-//import 'wessam/alp.dart';
+import 'package:gp/gihad/list_organs.dart';
+import 'package:gp/gihad/list_vechiles.dart';
+import 'package:gp/rana/list_birds.dart';
+import 'package:gp/rana/list_day.dart';
+import 'package:gp/rana/list_qra.dart';
+import 'package:gp/sara/list_monthes.dart';
+import 'package:gp/sara/list_shapes.dart';
+import 'package:gp/sara/list_vf.dart';
+import 'package:gp/wessam/list_alp.dart';
+import 'package:gp/wessam/list_clo.dart';
+import 'package:gp/wessam/list_co.dart';
+import 'package:gp/wessam/list_eng.dart';
+import 'package:gp/yasmin/list_animal.dart';
+import 'package:gp/yasmin/list_numbers.dart';
+import 'package:gp/yasmin/list_seasons.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -119,9 +109,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CoVideo(
-                                        videopath: 'assets/covideo.mp4',
-                                        headerText: "Colors")));
+                                    builder: (context) => ListAlp()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -182,7 +170,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CloQuize()));
+                                    builder: (context) => ListEng()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -245,7 +233,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => NumberSlider()));
+                                    builder: (context) => ListNumbers()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -308,7 +296,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CoSlide()));
+                                    builder: (context) => ListCo()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -371,7 +359,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => AnimalSlider()));
+                                    builder: (context) => ListAnimals()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -434,7 +422,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => DaySlide()));
+                                    builder: (context) => ListDay()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -497,7 +485,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => BodyP()));
+                                    builder: (context) => ListOrgans()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -560,7 +548,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => SeasonSlider()));
+                                    builder: (context) => ListSeasons()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -623,7 +611,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => TransportSlide()));
+                                    builder: (context) => ListVechiles()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -686,7 +674,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => BirdSlide()));
+                                    builder: (context) => Listbirds()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -749,7 +737,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => CloSlide()));
+                                    builder: (context) => ListClo()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -812,7 +800,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => MonthSlider()));
+                                    builder: (context) => ListMonthes()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -875,7 +863,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => VegSlider()));
+                                    builder: (context) => ListVf()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -938,7 +926,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => ShapeSlider()));
+                                    builder: (context) => ListShapes()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -1001,7 +989,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => QuranSlider()));
+                                    builder: (context) => ListQra()));
                           },
                           child: Padding(
                             padding: EdgeInsets.all(10.0),
@@ -1134,3 +1122,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     );
   }
 }
+
+/*  Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => CoVideo(
+                                        videopath: 'assets/covideo.mp4',
+                                        headerText: "Colors")));*/

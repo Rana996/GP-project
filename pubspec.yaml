@@ -347,6 +347,9 @@ flutter:
     - images/veg/broc.jpg
     - images/veg/apple.jpg
     - images/veg/bana.jpg
+    - images/si.png
+    - images/yi.png
+    - images/ti.png
     - assets/ggg.mp3
     - assets/Hen.mp3
     - assets/Cock.mp3
@@ -387,6 +390,14 @@ flutter:
     - assets/apple.mp3
     - assets/pear.mp3
     - assets/onion.mp3
+    - assets/clovideo.mp4
+    - assets/alpvideo.mp4
+    - assets/engvideo.mp4
+    - assets/animalvideo.mp4
+    - assets/birdvideo.mp4
+    - assets/qravideo.webm
+    - assets/dayvideo.webm
+
 
 
 
