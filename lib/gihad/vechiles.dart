@@ -85,7 +85,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Bicycle.mp3');
                             },
                           ),
                         ),
@@ -147,7 +147,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Scooter.mp3');
                             },
                           ),
                         ),
@@ -204,7 +204,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Car.mp3');
                             },
                           ),
                         ),
@@ -260,63 +260,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    //SizedBox( height:40, child:Image.asset('Icons/pink-transparent-mic.png') ),
-                  ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60.0),
-                    color: Colors.black12,
-                  )),
-              Container(width: 70.0, color: Colors.white10),
-              Container(
-                  width: 320,
-                  child: Column(children: [
-                    SizedBox(
-                      height: 75,
-                    ),
-                    SizedBox(
-                        height: 130,
-                        child: Image.asset('images/Vehicles/van.png')),
-                    SizedBox(
-                      height: 37,
-                    ),
-                    SizedBox(
-                      height: 50,
-                      child: Text(
-                        " Van ",
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 18,
-                    ),
-                    SizedBox(
-                      height: 25,
-                      child: //Image.asset('Icons/Speaker.png'),
-                          ClipOval(
-                        child: Material(
-                          color: Colors.yellow[600], // button color
-                          child: InkWell(
-                            splashColor: Colors.blue[100], // inkwell color
-                            child: SizedBox(
-                                width: 45,
-                                height: 25,
-                                child: Icon(
-                                  Icons.campaign,
-                                  color: Colors.white,
-                                  size: 25,
-                                )),
-                            onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Police Car.mp3');
                             },
                           ),
                         ),
@@ -373,64 +317,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    //SizedBox( height:40, child:Image.asset('Icons/pink-transparent-mic.png') ),
-                  ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60.0),
-                    color: Colors.black12,
-                  )),
-              Container(width: 70.0, color: Colors.white10),
-              Container(
-                  width: 320,
-                  child: Column(children: [
-                    SizedBox(
-                      height: 79,
-                    ),
-                    SizedBox(
-                        height: 120,
-                        width: 250,
-                        child: Image.asset('images/Vehicles/schoolbus2.png')),
-                    SizedBox(
-                      height: 40,
-                    ),
-                    SizedBox(
-                      height: 60,
-                      child: Text(
-                        " School Bus ",
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 18,
-                    ),
-                    SizedBox(
-                      height: 25,
-                      child: //Image.asset('Icons/Speaker.png'),
-                          ClipOval(
-                        child: Material(
-                          color: Colors.red[600], // button color
-                          child: InkWell(
-                            splashColor: Colors.blue[100], // inkwell color
-                            child: SizedBox(
-                                width: 45,
-                                height: 25,
-                                child: Icon(
-                                  Icons.campaign,
-                                  color: Colors.white,
-                                  size: 25,
-                                )),
-                            onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Bus.mp3');
                             },
                           ),
                         ),
@@ -487,63 +374,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    //SizedBox( height:40, child:Image.asset('Icons/pink-transparent-mic.png') ),
-                  ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60.0),
-                    color: Colors.black12,
-                  )),
-              Container(width: 70.0, color: Colors.white10),
-              Container(
-                  width: 320,
-                  child: Column(children: [
-                    SizedBox(
-                      height: 70,
-                    ),
-                    SizedBox(
-                        height: 130,
-                        child: Image.asset('images/Vehicles/ambulance.png')),
-                    SizedBox(
-                      height: 50,
-                    ),
-                    SizedBox(
-                      height: 50,
-                      child: Text(
-                        " Ambulance ",
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 18,
-                    ),
-                    SizedBox(
-                      height: 25,
-                      child: //Image.asset('Icons/Speaker.png'),
-                          ClipOval(
-                        child: Material(
-                          color: Colors.yellow[600], // button color
-                          child: InkWell(
-                            splashColor: Colors.blue[100], // inkwell color
-                            child: SizedBox(
-                                width: 45,
-                                height: 25,
-                                child: Icon(
-                                  Icons.campaign,
-                                  color: Colors.white,
-                                  size: 25,
-                                )),
-                            onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Fire Truck.mp3');
                             },
                           ),
                         ),
@@ -600,64 +431,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    //SizedBox( height:40, child:Image.asset('Icons/pink-transparent-mic.png') ),
-                  ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60.0),
-                    color: Colors.black12,
-                  )),
-              Container(width: 70.0, color: Colors.white10),
-              Container(
-                  width: 320,
-                  child: Column(children: [
-                    SizedBox(
-                      height: 66,
-                    ),
-                    SizedBox(
-                        height: 130,
-                        width: 280,
-                        child: Image.asset('images/Vehicles/boat.png')),
-                    SizedBox(
-                      height: 48,
-                    ),
-                    SizedBox(
-                      height: 50,
-                      child: Text(
-                        " Boat ",
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 18,
-                    ),
-                    SizedBox(
-                      height: 25,
-                      child: //Image.asset('Icons/Speaker.png'),
-                          ClipOval(
-                        child: Material(
-                          color: Colors.green[800], // button color
-                          child: InkWell(
-                            splashColor: Colors.blue[100], // inkwell color
-                            child: SizedBox(
-                                width: 45,
-                                height: 25,
-                                child: Icon(
-                                  Icons.campaign,
-                                  color: Colors.white,
-                                  size: 25,
-                                )),
-                            onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Train.mp3');
                             },
                           ),
                         ),
@@ -713,7 +487,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Ship.mp3');
                             },
                           ),
                         ),
@@ -769,7 +543,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Airplane.mp3');
                             },
                           ),
                         ),
@@ -825,7 +599,7 @@ class _TransportSlideState extends State<TransportSlide> {
                                   size: 30,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Rocket.mp3');
                             },
                           ),
                         ),

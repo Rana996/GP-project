@@ -39,62 +39,6 @@ class _BodyPState extends State<BodyP> {
             scrollDirection: Axis.horizontal,
             children: <Widget>[
               Container(
-                  width: 320,
-                  child: Column(children: [
-                    SizedBox(
-                      height: 65,
-                    ),
-                    SizedBox(
-                        height: 180,
-                        child: Image.asset('images/Body Parts/Face5.png')),
-                    SizedBox(
-                      height: 30,
-                    ),
-                    SizedBox(
-                      height: 50,
-                      child: Text(
-                        " Face ",
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 18,
-                    ),
-                    SizedBox(
-                      height: 25,
-                      child: //Image.asset('Icons/Speaker.png'),
-                          ClipOval(
-                        child: Material(
-                          color: Colors.pink[600], // button color
-                          child: InkWell(
-                              splashColor: Colors.blue[100], // inkwell color
-                              child: SizedBox(
-                                  width: 45,
-                                  height: 25,
-                                  child: Icon(
-                                    Icons.campaign,
-                                    color: Colors.white,
-                                    size: 25,
-                                  )),
-                              onTap: () {
-                                audioCache.play('Sparrow.mp3');
-                              }),
-                        ),
-                      ),
-                    ),
-                  ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60.0),
-                    color: Colors.red[100],
-                  )
-                  // width: 160.0,
-                  //color: Colors.red,
-                  ),
-              Container(
                 width: 70.0,
                 color: Colors.white10,
               ),
@@ -141,7 +85,7 @@ class _BodyPState extends State<BodyP> {
                                     size: 25,
                                   )),
                               onTap: () {
-                                audioCache.play('Sparrow.mp3');
+                                audioCache.play('Hair.mp3');
                               }),
                         ),
                       ),
@@ -196,7 +140,7 @@ class _BodyPState extends State<BodyP> {
                                     size: 25,
                                   )),
                               onTap: () {
-                                audioCache.play('Sparrow.mp3');
+                                audioCache.play('Eyes.mp3');
                               }),
                         ),
                       ),
@@ -206,62 +150,6 @@ class _BodyPState extends State<BodyP> {
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(60.0),
                     color: Colors.green[100],
-                  )),
-              Container(width: 70.0, color: Colors.white10),
-              Container(
-                  width: 320,
-                  child: Column(children: [
-                    SizedBox(
-                      height: 32,
-                    ),
-                    SizedBox(
-                        height: 200,
-                        child: Image.asset('images/Body Parts/Eyebrows1.png')),
-                    SizedBox(
-                      height: 40,
-                    ),
-                    SizedBox(
-                      height: 50,
-                      child: Text(
-                        " Eyebrows ",
-                        style: TextStyle(
-                          fontSize: 32,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.black54,
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 18,
-                    ),
-                    SizedBox(
-                      height: 25,
-                      child: //Image.asset('Icons/Speaker.png'),
-                          ClipOval(
-                        child: Material(
-                          color: Colors.brown[600], // button color
-                          child: InkWell(
-                            splashColor: Colors.blue[100], // inkwell color
-                            child: SizedBox(
-                                width: 45,
-                                height: 25,
-                                child: Icon(
-                                  Icons.campaign,
-                                  color: Colors.white,
-                                  size: 25,
-                                )),
-                            onTap: () {
-                              audioCache.play('Sparrow.mp3');
-                            },
-                          ),
-                        ),
-                      ),
-                    ),
-                    //SizedBox( height:40, child:Image.asset('Icons/pink-transparent-mic.png') ),
-                  ]),
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(60.0),
-                    color: Colors.brown[100],
                   )),
               Container(width: 70.0, color: Colors.white10),
               Container(
@@ -307,7 +195,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Nose.mp3');
                             },
                           ),
                         ),
@@ -363,7 +251,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Mouth.mp3');
                             },
                           ),
                         ),
@@ -419,7 +307,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Tongue.mp3');
                             },
                           ),
                         ),
@@ -475,7 +363,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Teeth.mp3');
                             },
                           ),
                         ),
@@ -503,7 +391,7 @@ class _BodyPState extends State<BodyP> {
                     SizedBox(
                       height: 50,
                       child: Text(
-                        " Ear ",
+                        " Ears ",
                         style: TextStyle(
                           fontSize: 32,
                           fontWeight: FontWeight.bold,
@@ -531,10 +419,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              Future<AudioPlayer> playLocalAsset() async {
-                                AudioCache cache = new AudioCache();
-                                return await cache.play("Sparrow.mp3");
-                              }
+                              audioCache.play('Ears.mp3');
                             },
                           ),
                         ),
@@ -590,7 +475,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Hands.mp3');
                             },
                           ),
                         ),
@@ -646,7 +531,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Feet.mp3');
                             },
                           ),
                         ),
@@ -702,7 +587,7 @@ class _BodyPState extends State<BodyP> {
                                   size: 25,
                                 )),
                             onTap: () {
-                              audioCache.play('Sparrow.mp3');
+                              audioCache.play('Legs.mp3');
                             },
                           ),
                         ),

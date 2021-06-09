@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/co_vedio.dart';
+import 'package:gp/sara/monthQuiz.dart';
 import 'package:gp/sara/months.dart';
 
 class ListMonthes extends StatelessWidget {
@@ -33,10 +35,8 @@ class ListMonthes extends StatelessWidget {
                 // color: Colors.tealAccent,
                 child: GestureDetector(
                   onTap: () {
-                     Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => MonthSlider()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MonthSlider()));
                   },
                   child: Image(
                     image: AssetImage("images/si.png"),
@@ -65,7 +65,14 @@ class ListMonthes extends StatelessWidget {
                     ]),
                 //color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/monthvideo.mp4',
+                                headerText: "Monthes")));
+                  },
                   child: Image(
                     image: AssetImage("images/yi.png"),
                     height: 150,
@@ -93,7 +100,10 @@ class ListMonthes extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => MonthQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/co_vedio.dart';
 import 'package:gp/yasmin/number_quiz.dart';
 import 'package:gp/yasmin/numbers.dart';
 
@@ -66,7 +67,14 @@ class ListNumbers extends StatelessWidget {
                     ]),
                 //color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/numbervideo.mp4',
+                                headerText: "Numbers")));
+                  },
                   child: Image(
                     image: AssetImage("images/yi.png"),
                     height: 150,

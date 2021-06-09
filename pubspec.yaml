@@ -31,6 +31,9 @@ dependencies:
   carousel_slider: ^1.3.1
   audioplayers: ^0.13.5
   video_player: ^1.0.1
+  speech_to_text: ^2.3.0
+  highlight_text: ^0.7.2
+  avatar_glow: ^1.2.0
   
 
 dev_dependencies:
@@ -149,6 +152,11 @@ flutter:
     - images/eng/xylophone.png
     - images/eng/yacht.png
     - images/videoback.jpg
+    - images/month/a.jpg
+    - images/month/b.jpg
+    - images/month/c.jpg
+    - images/month/d.jpg
+    - images/month/e.jpg
     - images/arrow.png
     - images/english.jpeg
     - images/alpa.jpeg
@@ -406,6 +414,26 @@ flutter:
     - assets/apple.mp3
     - assets/pear.mp3
     - assets/onion.mp3
+    - assets/Hair.mp3
+    - assets/Eyes.mp3
+    - assets/Nose.mp3
+    - assets/Mouth.mp3
+    - assets/Tongue.mp3
+    - assets/Teeth.mp3
+    - assets/Ears.mp3
+    - assets/Hands.mp3
+    - assets/Feet.mp3
+    - assets/Legs.mp3
+    - assets/Bicycle.mp3
+    - assets/Scooter.mp3
+    - assets/Car.mp3
+    - assets/Police Car.mp3
+    - assets/Bus.mp3
+    - assets/Fire Truck.mp3
+    - assets/Train.mp3
+    - assets/Ship.mp3
+    - assets/Airplane.mp3
+    - assets/Rocket.mp3
     - assets/clovideo.mp4
     - assets/alpvideo.mp4
     - assets/engvideo.mp4
@@ -413,6 +441,13 @@ flutter:
     - assets/birdvideo.mp4
     - assets/qravideo.webm
     - assets/dayvideo.webm
+    - assets/vehvideo.mp4
+    - assets/bodyvideo.mp4
+    - assets/numbervideo.mp4
+    - assets/shapevideo.mp4
+    - assets/vfvideo.mp4
+    - assets/seasonvideo.mp4
+    - assets/monthvideo.mp4
 
 
 

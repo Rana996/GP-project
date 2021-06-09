@@ -1,4 +1,169 @@
-import 'dart:math';
+import 'package:flutter/material.dart';
+import 'package:gp/rana/answer.dart';
+import 'package:gp/rana/result.dart';
+import 'package:gp/rana/question.dart';
+
+class Quiz extends StatelessWidget {
+  final List<Map<String, Object>> questions;
+  final int questionIndex;
+  final Function answerQuestion;
+
+  Quiz({
+    @required this.questions,
+    @required this.answerQuestion,
+    @required this.questionIndex,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Question(
+          questions[questionIndex]['questionText'],
+          questions[questionIndex]['img'],
+        ), //Question
+        ...(questions[questionIndex]['answers'] as List<Map<String, Object>>)
+            .map((answer) {
+          return Answer(() => answerQuestion(answer['score']), answer['text']);
+        }).toList()
+      ],
+    ); //Column
+  }
+}
+
+class CloQuize extends StatefulWidget {
+  @override
+  _CloQuizeState createState() => _CloQuizeState();
+}
+
+class _CloQuizeState extends State<CloQuize> {
+  final _questions = [
+    //  Container(
+    // child: ListView(
+    //  children: <Widget>[
+    //         Container(
+    //             width: 320,
+    //   child: Column(
+    //     children : [
+    //       SizedBox(
+    //       height: 200,
+    //       child: Image.asset('Birds/sparrow.png'),
+    //       ),
+    //'questionText': 'Q1. Who created Flutter?'
+    //SizedBox(
+
+    //child: ('questionText': 'Q1. Who created Flutter?',) ,
+    //),
+    //  ]))])), List<Map<String, Object>>
+
+    {
+      'img': 'images/clo/jaket.png',
+      'questionText': 'Q1. What is the name of this Clothes?',
+      'answers': [
+        //{'child': Image.asset('Bird/flammngo.png')},
+        {'text': 'skrit', 'score': 0},
+        {'text': 'boot', 'score': 0},
+        {'text': 'Jacket', 'score': 1},
+        {'text': 'dress', 'score': 0},
+      ],
+    },
+    {
+      'img': 'images/clo/skrit.png',
+      'questionText': 'Q2. What is the name of this Clothes?',
+      'answers': [
+        {'text': 'boot', 'score': 0},
+        {'text': 'cap', 'score': 0},
+        {'text': 'Jacket', 'score': 0},
+        {'text': 'skrit', 'score': 1},
+      ],
+    },
+    {
+      'img': 'images/clo/boot.png',
+      'questionText': ' Q3. What is the name of this Clothes?',
+      'answers': [
+        {'text': 'skrit', 'score': 0},
+        {'text': 'boot', 'score': 1},
+        {'text': 'cap', 'score': 0},
+        {'text': 'dress', 'score': 0},
+      ],
+    },
+    {
+      'img': 'images/clo/dress.png',
+      'questionText': 'Q4. What is the name of this Clothes?',
+      'answers': [
+        {'text': 'skrit', 'score': 0},
+        {'text': 'cap', 'score': 0},
+        {'text': 'dress', 'score': 1},
+        {'text': 'jeans', 'score': 0},
+      ],
+    },
+    {
+      'img': 'images/clo/jeans.png',
+      'questionText': 'Q5. What is the name of this Clothes?',
+      'answers': [
+        {'text': 'jeans', 'score': 1},
+        {'text': 'cap', 'score': 0},
+        {'text': 'skrit', 'score': 0},
+        {'text': 'dress', 'score': 0},
+      ],
+    },
+  ];
+
+  var _questionIndex = 0;
+  var _totalScore = 0;
+
+  void _resetQuiz() {
+    setState(() {
+      _questionIndex = 0;
+      _totalScore = 0;
+    });
+  }
+
+  void _answerQuestion(int score) {
+    _totalScore += score;
+
+    setState(() {
+      _questionIndex = _questionIndex + 1;
+    });
+    print(_questionIndex);
+    if (_questionIndex < _questions.length) {
+      print('We have more questions!');
+    } else {
+      print('No more questions!');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+        /* constraints: BoxConstraints.expand(),
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("BackgroundQuiz/Back1.jpg"),
+                        fit: BoxFit.cover)),*/
+        child: Scaffold(
+      appBar: AppBar(
+        centerTitle: true,
+        title: Text('Quiz of Clothes'),
+        backgroundColor: Color(0x3F00E676),
+      ),
+      body: Padding(
+        padding: const EdgeInsets.all(30.0),
+        child: _questionIndex < _questions.length
+            ? Quiz(
+                answerQuestion: _answerQuestion,
+                questionIndex: _questionIndex,
+                questions: _questions,
+              ) //Quiz
+            : Result(_totalScore, _resetQuiz),
+      ), //Padding
+      //Scaffold
+      // debugShowCheckedModeBanner: false,
+    ));
+  }
+}
+
+/*import 'dart:math';
 import 'package:audioplayers/audio_cache.dart';
 import 'package:flutter/material.dart';
 
@@ -168,4 +333,4 @@ class Movable extends StatelessWidget {
       ),
     );
   }
-}
+}*/

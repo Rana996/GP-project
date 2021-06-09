@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/co_vedio.dart';
+import 'package:gp/sara/shapeQuiz.dart';
 import 'package:gp/sara/shapes.dart';
 
 class ListShapes extends StatelessWidget {
@@ -33,10 +35,8 @@ class ListShapes extends StatelessWidget {
                 // color: Colors.tealAccent,
                 child: GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => ShapeSlider()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ShapeSlider()));
                   },
                   child: Image(
                     image: AssetImage("images/si.png"),
@@ -65,7 +65,14 @@ class ListShapes extends StatelessWidget {
                     ]),
                 //color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/shapevideo.mp4',
+                                headerText: "Shapes")));
+                  },
                   child: Image(
                     image: AssetImage("images/yi.png"),
                     height: 150,
@@ -93,7 +100,10 @@ class ListShapes extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => ShapeQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/co_vedio.dart';
 import 'package:gp/gihad/organs.dart';
 import 'package:gp/gihad/organs_quiz.dart';
 
@@ -64,7 +65,14 @@ class ListOrgans extends StatelessWidget {
                     ]),
                 //color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/bodyvideo.mp4',
+                                headerText: "Organs")));
+                  },
                   child: Image(
                     image: AssetImage("images/yi.png"),
                     height: 150,

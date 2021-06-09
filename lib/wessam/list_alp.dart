@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/wessam/alpQuiz.dart';
 import 'package:gp/wessam/alp_slide.dart';
 import 'package:gp/co_vedio.dart';
 
@@ -100,8 +101,8 @@ class ListAlp extends StatelessWidget {
                 // color: Colors.white,
                 child: GestureDetector(
                   onTap: () {
-                     Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => AlpSlider()));
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AlpQuize()));
                   },
                   child: Image(
                     image: AssetImage("images/ti.png"),

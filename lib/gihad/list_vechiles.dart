@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/co_vedio.dart';
 import 'package:gp/gihad/vechiles.dart';
 import 'package:gp/gihad/vechiles_quiz.dart';
 
@@ -66,7 +67,14 @@ class ListVechiles extends StatelessWidget {
                     ]),
                 //color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/vehvideo.mp4',
+                                headerText: "Vechiles")));
+                  },
                   child: Image(
                     image: AssetImage("images/yi.png"),
                     height: 150,

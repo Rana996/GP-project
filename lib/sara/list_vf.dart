@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gp/co_vedio.dart';
 import 'package:gp/sara/v_and_f.dart';
+import 'package:gp/sara/vfQuiz.dart';
 
 class ListVf extends StatelessWidget {
   static String id = "ListScreen";
@@ -63,7 +65,14 @@ class ListVf extends StatelessWidget {
                     ]),
                 //color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CoVideo(
+                                videopath: 'assets/vfvideo.mp4',
+                                headerText: "Vegtables&fruits")));
+                  },
                   child: Image(
                     image: AssetImage("images/yi.png"),
                     height: 150,
@@ -91,7 +100,10 @@ class ListVf extends StatelessWidget {
                     ]),
                 // color: Colors.white,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => VfQuiz()));
+                  },
                   child: Image(
                     image: AssetImage("images/ti.png"),
                     height: 150,
